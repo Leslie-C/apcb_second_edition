@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Introduction | A Minimal Book Example</title>
+  <title>Chapter 3 {r figId1, fig.cap='Here is a nice figure!', out.width='50%', fig.asp=.75, fig.align='center', echo=FALSE, fig.} # knitr::include_graphics("images/chapter_demo/II.13_1_string_alignment.png") # | A Minimal Book Example</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Introduction | A Minimal Book Example" />
+  <meta property="og:title" content="Chapter 3 {r figId1, fig.cap='Here is a nice figure!', out.width='50%', fig.asp=.75, fig.align='center', echo=FALSE, fig.} # knitr::include_graphics("images/chapter_demo/II.13_1_string_alignment.png") # | A Minimal Book Example" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Introduction | A Minimal Book Example" />
+  <meta name="twitter:title" content="Chapter 3 {r figId1, fig.cap='Here is a nice figure!', out.width='50%', fig.asp=.75, fig.align='center', echo=FALSE, fig.} # knitr::include_graphics("images/chapter_demo/II.13_1_string_alignment.png") # | A Minimal Book Example" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -24,14 +24,14 @@
 <meta name="author" content="Yihui Xie" />
 
 
-<meta name="date" content="2021-08-02" />
+<meta name="date" content="2021-08-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
+<link rel="prev" href="algorithms-and-data-structures.html"/>
 <link rel="next" href="literature.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -94,7 +94,7 @@
 }
 
 .temporary {
-  background: linear-gradient(to right, rgba(100, 150, 180, .5) 70%, rgba(100, 150, 180, 0));;
+  background: none; /*linear-gradient(to right, rgba(100, 150, 180, .5) 70%, rgba(100, 150, 180, 0)); */
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h6 {
@@ -106,6 +106,37 @@
   margin-right: 0.2em;
   border-right: none;
 }
+
+.callout-box {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 4px;
+  margin: 25px 10px 10px 10px;
+  padding: 10px;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .callout-box h4 {
+  margin-top: 0;
+}
+
+.fig.center {
+  margin: 0 auto;
+  display: block;
+}
+
+.fig.left {
+  display: inline;
+  align: left;
+}
+
+.fig.right {
+  display: inline;
+  align: right;
+}
+
+.fig>p.caption {
+  color: #ff0000;
+}
+
 </style>
 
 
@@ -188,19 +219,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">A Primer for Computational Biology (2nd Ed.)</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
-<li class="part"><span><b>Part 1: The Unix/Linux Command-Line</b></span></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
-<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
-<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
-<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
-<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+<li class="part"><span><b>Part 0: Custom Bookdown Template for APCB v2.0</b></span></li>
+<li class="chapter" data-level="2" data-path="algorithms-and-data-structures.html"><a href="algorithms-and-data-structures.html"><i class="fa fa-check"></i><b>2</b> Algorithms and Data Structures</a></li>
+<li class="chapter" data-level="3" data-path="r-figid1-fig-caphere-is-a-nice-figure-out-width50-fig-asp-75-fig-aligncenter-echofalse-fig-knitrinclude-graphicsimageschapter-demoii-13-1-string-alignment-png.html"><a href="r-figid1-fig-caphere-is-a-nice-figure-out-width50-fig-asp-75-fig-aligncenter-echofalse-fig-knitrinclude-graphicsimageschapter-demoii-13-1-string-alignment-png.html"><i class="fa fa-check"></i><b>3</b> <code>{r figId1, fig.cap='Here is a nice figure!', out.width='50%', fig.asp=.75, fig.align='center', echo=FALSE, fig.} # knitr::include_graphics("images/chapter_demo/II.13_1_string_alignment.png") #</code></a></li>
+<li class="chapter" data-level="4" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>4</b> Literature</a></li>
+<li class="chapter" data-level="5" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>5</b> Methods</a></li>
+<li class="chapter" data-level="6" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>6</b> Applications</a><ul>
+<li class="chapter" data-level="6.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>6.1</b> Example one</a></li>
+<li class="chapter" data-level="6.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>6.2</b> Example two</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="7" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>7</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -222,200 +254,62 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="intro" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Introduction</h1>
-<p>You can label chapter and section titles using <code>{#label}</code> after them, e.g., we can reference Chapter <a href="intro.html#intro">2</a>. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter <a href="methods.html#methods">4</a>.</p>
+<div id="r-figid1-fig.caphere-is-a-nice-figure-out.width50-fig.asp.75-fig.aligncenter-echofalse-fig.-knitrinclude_graphicsimageschapter_demoii.13_1_string_alignment.png" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> <code>{r figId1, fig.cap='Here is a nice figure!', out.width='50%', fig.asp=.75, fig.align='center', echo=FALSE, fig.} # knitr::include_graphics("images/chapter_demo/II.13_1_string_alignment.png") #</code></h1>
+<!-- <div class="fig center" id="figId1" width="50%"> -->
+<!--   <img src="images/chapter_demo/II.13_1_string_alignment.png" /> -->
+<!--   <p class="caption">This is a caption.</p> -->
+<!-- </div> -->
+<p>Link to the <a href="r-figid1-fig-caphere-is-a-nice-figure-out-width50-fig-asp-75-fig-aligncenter-echofalse-fig-knitrinclude-graphicsimageschapter-demoii-13-1-string-alignment-png.html#figId1">fig</a></p>
+<p>Clearly, some problems, like the string alignment problem, are of special interest for life scientists. Others, like sorting and searching, are ubiquitous. No matter who cares about the problem, a good algorithm for solving it should do so efficiently. Usually, “efficiently” means “in a short amount of time,” though with the large data sets produced by modern DNA-sequencing technologies, it often also means “using a small amount of memory.”</p>
+<!-- See the source code for this page for actual usage of the described formatting :) -->
+<!-- # Section Headers and Parts {#section-headers} -->
+<!-- "Part" headers can be included by adding some special syntax; in the below `(PART\*)` is used to indicate that the header is a Part-header for styling, and `{-}` prevents it from being numbered.  -->
+<!-- ``` -->
+<!-- # (PART\*) Part 1: The Unix/Linux Command-Line {-} -->
+<!-- ``` -->
+<!-- Section Headers can be created using standard markdown syntax; section headers are automatically linkable but can be given a friendlier ID by including a `#theid` in the `{}` metadata; using `-` in the same metadata makes the sections unnumbered: -->
+<!-- #### Level 4 Header Default -->
+<!-- #### Level 4 Header Unnumbered {-} -->
+<!-- ### Level 4 Header, Unnumbered + Custom ID {- #custom-id-example} -->
+<!-- Code for the above headers: -->
+<!-- ``` -->
+<!-- ### Level 3 Header Default -->
+<!-- #### Level 4 Header Unnumbered {-} -->
+<!-- #### Level 4 Header, Unnumbered + Custom ID {- #custom-id-example} -->
+<!-- ``` -->
+<!-- <div class="callout-box"> -->
+<!-- #### Exercises {-} -->
+<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a interdum tortor. Sed in neque vestibulum, placerat velit vel, eleifend tellus. Mauris vel neque ac leo fermentum condimentum. Aenean ipsum orci, vestibulum quis auctor at, lacinia vitae arcu. Integer non venenatis urna. Nulla at elementum nibh. Quisque ut ipsum ornare, consectetur tellus at, ullamcorper urna. Fusce at pharetra sapien. -->
+<!-- 1. Item 1 -->
+<!-- 2. Item 2 -->
+<!--     <pre class="language-r line-numbers linkable-line-numbers" id="linktarget" data-start="1" data-line="2,3,5,7-9"><code> -->
+<!--     x <- function(a, b) { -->
+<!--       return(a+b) -->
+<!--     } -->
+<!--     rnorm(100) %>% to_lower() %>% x() %>% rnorm(100) %>% to_lower() %>% x() %>% rnorm(100) %>% to_lower() %>% x() %>% rnorm(100) %>% to_lower() %>% x()  -->
+<!--     line 6 -->
+<!--     line 7 -->
+<!--     line 8 -->
+<!--     line 9 -->
+<!--     line 10 -->
+<!--     </code></pre> -->
+<!-- 3. Item 3 -->
+<!-- <pre class="line-numbers" data-start=4><code class="language-txt"> -->
+<!-- This is just some text. -->
+<!-- Nothing to see here, move along, move along. -->
+<!-- </code></pre> -->
+<!-- Aliquam dui purus, convallis ut suscipit vel, scelerisque id mi. Quisque arcu odio, pretium quis risus sed, tempor tristique ipsum. Suspendisse potenti. Quisque est turpis, feugiat quis convallis sit amet, convallis sed ex. Aenean ultrices sapien et augue pulvinar egestas eget vitae ante. Pellentesque bibendum molestie metus, vitae congue elit commodo et. Fusce consequat ac ante eget egestas. Sed ullamcorper augue ut felis convallis, at pharetra dolor blandit. Aenean lacus metus, scelerisque sit amet metus et, dapibus laoreet ipsum. Phasellus euismod egestas consectetur. Aliquam et condimentum nunc. -->
+<!-- </div> -->
+<!-- We can then create links to these anchors with `[some text](#anchor-id)` syntax. For example, [here](#custom-id-example-2) is a link to the last of the headers above created with `[here](#custom-id-example-2)`. These links can be used across chapters or parts.  -->
 
-<div class="language-bash">
-echo $USER
-</div>
-
-<p>Figures and tables with captions will be placed in <code>figure</code> and <code>table</code> environments, respectively. {#second-paragraph}</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="intro.html#cb2-1"></a><span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="fl">.1</span>, <span class="fl">.1</span>))</span>
-<span id="cb2-2"><a href="intro.html#cb2-2"></a><span class="kw">plot</span>(pressure, <span class="dt">type =</span> <span class="st">&#39;b&#39;</span>, <span class="dt">pch =</span> <span class="dv">19</span>)</span></code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:nice-fig"></span>
-<img src="bookdown-demo_files/figure-html/nice-fig-1.png" alt="Here is a nice figure!" width="80%" />
-<p class="caption">
-Figure 2.1: Here is a nice figure!
-</p>
-</div>
-<p>Reference a figure by its code chunk label with the <code>fig:</code> prefix, e.g., see Figure <a href="intro.html#fig:nice-fig">2.1</a>. Similarly, you can reference tables generated from <code>knitr::kable()</code>, e.g., see Table <a href="intro.html#tab:nice-tab">2.1</a>.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="intro.html#cb3-1"></a>knitr<span class="op">::</span><span class="kw">kable</span>(</span>
-<span id="cb3-2"><a href="intro.html#cb3-2"></a>  <span class="kw">head</span>(iris, <span class="dv">20</span>), <span class="dt">caption =</span> <span class="st">&#39;Here is a nice table!&#39;</span>,</span>
-<span id="cb3-3"><a href="intro.html#cb3-3"></a>  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></span>
-<span id="cb3-4"><a href="intro.html#cb3-4"></a>)</span></code></pre></div>
-<table>
-<caption><span id="tab:nice-tab">Table 2.1: </span>Here is a nice table!</caption>
-<thead>
-<tr class="header">
-<th align="right">Sepal.Length</th>
-<th align="right">Sepal.Width</th>
-<th align="right">Petal.Length</th>
-<th align="right">Petal.Width</th>
-<th align="left">Species</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">5.1</td>
-<td align="right">3.5</td>
-<td align="right">1.4</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">4.9</td>
-<td align="right">3.0</td>
-<td align="right">1.4</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">4.7</td>
-<td align="right">3.2</td>
-<td align="right">1.3</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">4.6</td>
-<td align="right">3.1</td>
-<td align="right">1.5</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">5.0</td>
-<td align="right">3.6</td>
-<td align="right">1.4</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">5.4</td>
-<td align="right">3.9</td>
-<td align="right">1.7</td>
-<td align="right">0.4</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">4.6</td>
-<td align="right">3.4</td>
-<td align="right">1.4</td>
-<td align="right">0.3</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">5.0</td>
-<td align="right">3.4</td>
-<td align="right">1.5</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">4.4</td>
-<td align="right">2.9</td>
-<td align="right">1.4</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">4.9</td>
-<td align="right">3.1</td>
-<td align="right">1.5</td>
-<td align="right">0.1</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">5.4</td>
-<td align="right">3.7</td>
-<td align="right">1.5</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">4.8</td>
-<td align="right">3.4</td>
-<td align="right">1.6</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">4.8</td>
-<td align="right">3.0</td>
-<td align="right">1.4</td>
-<td align="right">0.1</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">4.3</td>
-<td align="right">3.0</td>
-<td align="right">1.1</td>
-<td align="right">0.1</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">5.8</td>
-<td align="right">4.0</td>
-<td align="right">1.2</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">5.7</td>
-<td align="right">4.4</td>
-<td align="right">1.5</td>
-<td align="right">0.4</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">5.4</td>
-<td align="right">3.9</td>
-<td align="right">1.3</td>
-<td align="right">0.4</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">5.1</td>
-<td align="right">3.5</td>
-<td align="right">1.4</td>
-<td align="right">0.3</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">5.7</td>
-<td align="right">3.8</td>
-<td align="right">1.7</td>
-<td align="right">0.3</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">5.1</td>
-<td align="right">3.8</td>
-<td align="right">1.5</td>
-<td align="right">0.3</td>
-<td align="left">setosa</td>
-</tr>
-</tbody>
-</table>
-<p>You can write citations, too. For example, we are using the <strong>bookdown</strong> package <span class="citation">(Xie <a href="#ref-R-bookdown" role="doc-biblioref">2021</a>)</span> in this sample book, which was built on top of R Markdown and <strong>knitr</strong> <span class="citation">(Xie <a href="#ref-xie2015" role="doc-biblioref">2015</a>)</span>. Link attempt to <a href="#second-paragraph">the second paragraph</a>.</p>
-
-</div>
-<h3>References</h3>
-<div id="refs" class="references">
-<div id="ref-xie2015">
-<p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.name/knitr/">http://yihui.name/knitr/</a>.</p>
-</div>
-<div id="ref-R-bookdown">
-<p>Xie, Yihui. 2021. <em>Bookdown: Authoring Books and Technical Documents with R Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.</p>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="algorithms-and-data-structures.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="literature.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
@@ -461,7 +355,7 @@ gitbook.start({
 },
 "download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
 "toc": {
-"collapse": "subsection"
+"collapse": "section"
 }
 });
 });
