@@ -33,6 +33,11 @@ jobs:
           install.packages(c('bookdown'))
         shell: Rscript {0}
 
+      - name: check packages
+        run: |
+          renv::status()
+        shell: Rscript {0}
+
       - name: Cache bookdown results
         uses: actions/cache@v3
         with:
