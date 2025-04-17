@@ -46,8 +46,11 @@ jobs:
           restore-keys: bookdown-
 
       - name: Build site
-        run: bookdown::render_book("index.Rmd", quiet = TRUE)
+        run: bookdown::render_book()
         shell: Rscript {0}
+
+      - name: list directory contents
+        run: ls -la docs/
 
       - name: Deploy to GitHub pages 🚀
         if: github.event_name != 'pull_request'
